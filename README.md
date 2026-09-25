@@ -1,4 +1,4 @@
-# grc-risk-assessment-project
+# GRC-Risk-Assessment-Project
 
 Cybersecurity GRC risk assessment for a fictional financial company
 
