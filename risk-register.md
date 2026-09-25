@@ -1,4 +1,4 @@
-Risk Register
+Risk Register:
 
 
 R-001 Risk: MFA is not enabled for every user.
