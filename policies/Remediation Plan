@@ -1,0 +1,29 @@
+1. Enable MFA
+Owner: IAM Team
+Priority: Critical
+Target: 30 days
+Success: 100% of user accounts use MFA.
+
+2. Review administrator accounts
+Owner: Security Team
+Priority: High
+Target: 30 days
+Success: Unneeded administrator access is removed.
+
+3. Create an incident response plan
+Owner: Security Manager
+Priority: High
+Target: 60 days
+Success: The company completes a response exercise.
+
+4. Test backups
+Owner: IT Team
+Priority: High
+Target: 45 days
+Success: The company successfully restores a test file.
+
+5. Conduct phishing training
+Owner: HR and Security
+Priority: Medium
+Target: 90 days
+Success: At least 95% of employees finish the training.
