@@ -9,7 +9,7 @@ Risk: Former employees may keep access.
 Likelihood: Medium
 Impact: High
 Risk level: High
-Treatment: Create a documented offboarding process.
+Treatment: Create a documented off boarding process.
 
 
 R-003
