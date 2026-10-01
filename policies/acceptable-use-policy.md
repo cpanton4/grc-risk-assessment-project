@@ -8,3 +8,21 @@ The purpose of this Acceptable Use Policy is to ensure that all employees, contr
 
 
 
+
+
+Scope:
+
+
+This policy applies to:
+
+
+
+All employees (full-time, part-time, temporary)
+
+Contractors, interns, and third-party service providers
+
+Anyone granted access to Arthur Financial Services systems, devices, or data
+
+
+
+
