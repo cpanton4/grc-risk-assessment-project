@@ -15,15 +15,15 @@ Target State:
 MFA enforced for all users, all systems, all remote access, and all administrative accounts.
 
 Evidence to Check:
-Entra ID Conditional Access policies
+Entra ID Conditional Access policies.
 
-MFA enrollment reports
+MFA enrollment reports.
 
-VPN authentication logs
+VPN authentication logs.
 
-Screenshots or exports showing MFA enforcement settings
+Screenshots or exports showing MFA enforcement settings.
 
-Documentation of exceptions (if any)
+Documentation of exceptions (if any).
 
 Status: Open
 
@@ -43,24 +43,24 @@ Access reviews are not scheduled or documented.
 Target State:
 Formal access review process every three months, covering:
 
-Microsoft 365
+Microsoft 365.
 
-Entra ID roles
+Entra ID roles.
 
-VPN access
+VPN access.
 
-Administrative privileges
+Administrative privileges.
 
 Evidence to Check:
-Access review logs or tickets
+Access review logs or tickets.
 
-Review sign-off records
+Review sign-off records.
 
-Role-based access control (RBAC) documentation
+Role-based access control (RBAC) documentation.
 
-Audit trails showing permission changes
+Audit trails showing permission changes.
 
-Review calendar or workflow documentation
+Review calendar or workflow documentation.
 
 Status: Open
 
@@ -82,24 +82,24 @@ No formal incident response plan exists.
 Target State:
 A documented, approved, and tested incident response plan including:
 
-Roles and responsibilities
+Roles and responsibilities.
 
-Communication procedures
+Communication procedures.
 
-Escalation paths
+Escalation paths.
 
-Testing at least annually
+Testing at least annually.
 
 Evidence to Check:
-Incident Response Plan document
+Incident Response Plan document.
 
-Test/exercise reports
+Test/exercise reports.
 
-Training records
+Training records.
 
-Incident logs showing use of the plan
+Incident logs showing use of the plan.
 
-Approval records
+Approval records.
 
 Status: Open
 
@@ -119,24 +119,24 @@ Backups exist but recovery testing is not performed.
 Target State:
 Data recovery testing every three months, covering:
 
-Microsoft 365 data
+Microsoft 365 data.
 
-Cloud storage
+Cloud storage.
 
-Critical financial systems
+Critical financial systems.
 
 Laptop recovery images (if applicable)
 
 Evidence to Check:
-Backup configuration reports
+Backup configuration reports.
 
-Recovery test logs
+Recovery test logs.
 
-Screenshots of successful restores
+Screenshots of successful restores.
 
-Backup retention policies
+Backup retention policies.
 
-Backup failure alerts
+Backup failure alerts.
 
 Status: Open
 
@@ -157,14 +157,14 @@ Target State:
 Mandatory annual cybersecurity awareness training for all employees, with tracking and completion reporting.
 
 Evidence to Check:
-LMS training completion reports
+LMS training completion reports.
 
-Training materials and curriculum
+Training materials and curriculum.
 
-Attendance logs
+Attendance logs.
 
-Policy requiring mandatory training
+Policy requiring mandatory training.
 
-Records of disciplinary action for non-compliance (if applicable)
+Records of disciplinary action for non-compliance (if applicable).
 
 Status: Open
