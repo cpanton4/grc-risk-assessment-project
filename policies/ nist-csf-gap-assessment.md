@@ -173,4 +173,11 @@ Backup Testing,PR.DS / RC.RP,Medium
 Security Training,GV.AT,Medium
 
 Status: Open
-[area-nist-csf-2-0-category-5.csv](https://github.com/user-attachments/files/32938765/area-nist-csf-2-0-category-5.csv)
+
+| Area | NIST CSF 2.0 Category | Gap Severity |
+| --- | --- | --- |
+| Identity Management | PR.AA | High |
+| Access Reviews | PR.AA / GV.OV | Medium |
+| Incident Response | RS.MA | High |
+| Backup Testing | PR.DS / RC.RP | Medium |
+| Security Training | GV.AT | Medium |
