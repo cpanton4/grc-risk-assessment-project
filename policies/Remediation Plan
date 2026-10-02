@@ -1,29 +1,143 @@
-1. Enable MFA
+## Enable MFA
+Risk ID: AFS‑IAM‑001
+
 Owner: IAM Team
+
 Priority: Critical
-Target: 30 days
-Success: 100% of user accounts use MFA.
 
-2. Review administrator accounts
+Priority Rationale: MFA protects access to financial data and Microsoft 365 accounts. Without MFA, a single stolen password could lead to account takeover, fraudulent financial activity, or data exposure.
+
+Target Date: 30 days
+
+Actual Target Date: Pending
+
+Status: In Progress
+
+Success Criteria: 100% of user accounts use MFA.
+
+Evidence Needed:
+
+Entra ID MFA enforcement policy screenshot
+
+Export of MFA enrollment report showing 100% completion
+
+Notes / Follow‑Up:
+
+Weekly progress checks with IAM
+
+Escalate non‑compliant accounts to HR after day 20
+
+
+
+## Review Administrator Accounts
+Risk ID: AFS‑SEC‑002
+
 Owner: Security Team
-Priority: High
-Target: 30 days
-Success: Unneeded administrator access is removed.
 
-3. Create an incident response plan
+Priority: High
+
+Priority Rationale: Excess admin accounts increase the attack surface. Privileged misuse or compromise could lead to unauthorized system changes or data theft.
+
+Target Date: 30 days
+
+Actual Target Date: Pending
+
+Status: Not Started
+
+Success Criteria: Unneeded administrator access is removed.
+
+Evidence Needed:
+
+Admin role review report
+
+Change logs showing removal of unnecessary admin roles
+
+Updated least‑privilege matrix
+
+
+## Create an Incident Response Plan
+Risk ID: AFS‑MGMT‑003
+
 Owner: Security Manager
-Priority: High
-Target: 60 days
-Success: The company completes a response exercise.
 
-4. Test backups
+Priority: High
+
+Priority Rationale: The company handles financial data and must be able to respond quickly to breaches. Lack of an IR plan increases downtime, financial loss, and regulatory exposure.
+
+Target Date: 60 days
+
+Actual Target Date: Pending
+
+Status: In Progress
+
+Success Criteria: Company completes a response exercise.
+
+Evidence Needed:
+
+Final IR plan document
+
+Tabletop exercise report
+
+Attendance list for participants
+
+
+## Test Backups
+Risk ID: AFS‑IT‑004
+
 Owner: IT Team
-Priority: High
-Target: 45 days
-Success: The company successfully restores a test file.
 
-5. Conduct phishing training
-Owner: HR and Security
+Priority: High
+
+Priority Rationale: Backup failures could result in permanent loss of customer financial data. Testing ensures recoverability and supports business continuity.
+
+Target Date: 45 days
+
+Actual Target Date: Pending
+
+Status: Scheduled
+
+Success Criteria: Company successfully restores a test file.
+
+Evidence Needed:
+
+Backup job logs
+
+Screenshot or report showing successful file restoration
+
+Updated backup testing procedure
+
+
+## Conduct Phishing Training
+Risk ID: AFS‑HRSEC‑005
+
+Owner: HR & Security
+
 Priority: Medium
-Target: 90 days
-Success: At least 95% of employees finish the training.
+
+Priority Rationale: Phishing is a common attack vector. Training reduces risk but is not as urgent as MFA or admin access because it does not directly protect systems.
+
+Target Date: 90 days
+
+Actual Target Date: Pending
+
+Status: Not Started
+
+Success Criteria: At least 95% of employees complete training.
+
+Evidence Needed:
+
+LMS completion report
+
+Training materials
+
+Phishing simulation results
+
+Follow‑Up Plan for Remaining 5%:
+
+HR sends individual reminders
+
+Security schedules mandatory 1:1 training for non‑compliant employees
+
+Employees who fail to complete training after 3 reminders are escalated to management
+
+Completion tracked weekly until 100% is achieved
