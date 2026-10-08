@@ -1,19 +1,19 @@
- # #Incident Response Policy: 
+ ## Incident Response Policy: 
 
 
 
- # #1. Purpose:
+ ## 1. Purpose:
 
 
 
 
 The purpose of this Incident Response Policy is to ensure Arthur Financial Services can quickly detect, report, analyze, contain, and recover from cybersecurity incidents. This policy establishes clear responsibilities, communication channels, escalation procedures, and documentation requirements.
 
- # #2. Scope:
+ ## 2. Scope:
 
 
 
- # #This policy applies to:
+ ## This policy applies to:
 
 All employees, contractors, interns, and third-party service providers.
 
@@ -23,21 +23,21 @@ All company systems including Microsoft 365, Microsoft Entra ID, Windows laptops
 
 
 
- # #3. Definitions:
+ ## 3. Definitions:
 
 
 
- # #Security Incident: Any event that threatens confidentiality, integrity, or availability of company systems or data.
+ ## Security Incident: Any event that threatens confidentiality, integrity, or availability of company systems or data.
 
 
 
-Examples: phishing attacks, malware infections, unauthorized access, data loss, suspicious login activity, compromised accounts, or VPN misuse.
+ Examples: phishing attacks, malware infections, unauthorized access, data loss, suspicious login activity, compromised accounts, or VPN misuse.
 
 
 
 
 
- # #4. Reporting a Suspected Incident
+ ## 4. Reporting a Suspected Incident
 
 
 
@@ -64,11 +64,11 @@ Failure to report incidents may result in disciplinary action.
 
 
 
- # #5. Roles and Responsibilities
+ ## 5. Roles and Responsibilities
 
 
 
- # #5.1 Incident Response Coordinator (IRC)
+ ## 5.1 Incident Response Coordinator (IRC)
 
 
 
@@ -78,34 +78,34 @@ Leading and coordinating the incident response, Assigning tasks to IT Security a
 
 
 
- # #5.2 IT Security Team
+ ## 5.2 IT Security Team
 
 
-Investigates alerts from Microsoft 365, Entra ID, and endpoint protection, Performs containment actions (account lockouts, device isolation, etc.), Collects logs and evidence, Supports recovery and remediation and Documents all actions taken.
-
-
-
- # #5.3 IT Support Team
+ Investigates alerts from Microsoft 365, Entra ID, and endpoint protection, Performs containment actions (account lockouts, device isolation, etc.), Collects logs and evidence, Supports recovery and remediation and Documents all actions taken.
 
 
 
-Assists with device isolation, password resets, and user communication, Helps restore affected systems and Implements technical fixes recommended by IT Security.
+ ## 5.3 IT Support Team
 
 
 
- # #5.4 Executive Leadership
+ Assists with device isolation, password resets, and user communication, Helps restore affected systems and Implements technical fixes recommended by IT Security.
 
 
 
-Makes decisions for severe incidents involving customer data, legal exposure, or business continuity.
+ ## 5.4 Executive Leadership
 
 
 
-Approves public communication and regulatory notifications.
+ Makes decisions for severe incidents involving customer data, legal exposure, or business continuity.
 
 
 
- # #6. Escalation Levels
+ Approves public communication and regulatory notifications.
+
+
+
+ ## 6. Escalation Levels
 
 
 
