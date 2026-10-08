@@ -1,4 +1,4 @@
-Company Overview:
+## Company Overview:
 
 
 Arthur Financial Services is a fictional financial company with 100 employees.
