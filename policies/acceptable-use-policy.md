@@ -1,8 +1,8 @@
-## Acceptable Use Policy: 
+## Acceptable Use Policy 
  
 
 
- ## Purpose:
+ ## Purpose
 
 The purpose of this Acceptable Use Policy is to ensure that all employees, contractors, and authorized users of Arthur Financial Services use company technology, data, and digital resources responsibly, securely, and in compliance with regulatory and business requirements. This policy supports the company’s cybersecurity risk management program and addresses risks identified in the recent cybersecurity assessment.
 
@@ -13,7 +13,7 @@ The purpose of this Acceptable Use Policy is to ensure that all employees, contr
 
 
 
- ## Scope:
+ ## Scope
 
 
 This policy applies to:
@@ -147,7 +147,7 @@ Revocation of system access, Mandatory retraining, Disciplinary action up to ter
  ## 8. Alignment With Risk Register
 
 
- ## This policy directly addresses the following risks:
+ ## This policy directly addresses the following risks
 
 
 
