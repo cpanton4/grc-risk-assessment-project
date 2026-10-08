@@ -1,4 +1,4 @@
-## Enable MFA
+Enable MFA
 Risk ID: AFS‑IAM‑001
 
 Owner: IAM Team
@@ -29,7 +29,7 @@ Escalate non‑compliant accounts to HR after day 20
 
 
 
-## Review Administrator Accounts
+Review Administrator Accounts
 Risk ID: AFS‑SEC‑002
 
 Owner: Security Team
@@ -55,7 +55,7 @@ Change logs showing removal of unnecessary admin roles
 Updated least‑privilege matrix
 
 
-## Create an Incident Response Plan
+Create an Incident Response Plan
 Risk ID: AFS‑MGMT‑003
 
 Owner: Security Manager
@@ -81,7 +81,7 @@ Tabletop exercise report
 Attendance list for participants
 
 
-## Test Backups
+Test Backups
 Risk ID: AFS‑IT‑004
 
 Owner: IT Team
@@ -107,7 +107,7 @@ Screenshot or report showing successful file restoration
 Updated backup testing procedure
 
 
-## Conduct Phishing Training
+Conduct Phishing Training
 Risk ID: AFS‑HRSEC‑005
 
 Owner: HR & Security
