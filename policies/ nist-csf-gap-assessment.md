@@ -22,7 +22,7 @@ Status: Open
 
 Gap Severity: High
 
-## Scenario Clarification:  
+Scenario Clarification:  
 The register previously stated MFA was “enforced,” but the gap assessment showed missing MFA. Label the register’s statement as Target State and the gap assessment as Current State to resolve the contradiction.
 
 
@@ -60,40 +60,29 @@ ID.IM‑02 (Improvements from tests/exercises)
 
 RS.CO‑02 (Notifying internal/external stakeholders)
 
-Corrected Mapping Rationale:  
+## Corrected Mapping Rationale:  
+
 RS.MA‑01 and RS.MA‑02 relate to response execution and triage, not plan creation/testing.
 ID.IM‑04 covers maintaining incident response plans.
 ID.IM‑02 covers improvements from exercises.
 RS.CO‑02 replaces RS.CO‑01 (which does not exist in CSF 2.0).
 
-Current State:  
-No documented incident response plan.
+## Current State:  
+No documented or tested incident response plan, reducing ability to respond to incidents.
 
-Target State:  
-A documented, approved, and annually tested incident response plan including:
+## Target State:  
+Documented, approved, annually tested IR plan, including:
 
-Roles/responsibilities
+Roles/responsibilities, Communication procedures, Escalation paths and Annual testing and updates.
 
-Communication procedures
+## Evidence to Check:
 
-Escalation paths
-
-Annual testing and updates
-
-Evidence to Check:
-
-Incident Response Plan document
-
-Test/exercise reports
-
-Training records
-
-Incident logs showing plan usage
-
-Approval records
+Incident Response Plan document, Test/exercise reports, Training records, Incident logs showing plan usage and Approval records.
 
 Status: Open
+
 Gap Severity: High
+
 Note: Mark any drafted policies as Draft until implemented.
 
 
