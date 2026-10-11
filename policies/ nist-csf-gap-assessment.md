@@ -28,6 +28,7 @@ The register previously stated MFA was “enforced,” but the gap assessment sh
 
 
 
+
 ## Access Reviews (Quarterly Reviews Missing)
 
 NIST CSF 2.0 Reference: PR.AA‑05 (Permissions, least privilege, access reviews)
@@ -47,6 +48,7 @@ Microsoft 365, Entra ID roles, VPN access, Administrative privileges, Access rev
 Status: Open.
 
 Gap Severity: Medium.
+
 
 
 
@@ -86,6 +88,9 @@ Gap Severity: High
 Note: Mark any drafted policies as Draft until implemented.
 
 
+
+
+
 ## Backups (Not Tested)
 
 NIST CSF 2.0 Reference: PR.DS‑11 (Backup creation, protection, maintenance, and testing)
@@ -114,7 +119,10 @@ Status: Open
 Gap Severity: Medium
 
 
-## Security Training (Optional)
+
+
+
+## Optional Security Training 
 
 NIST CSF 2.0 Reference: PR.AT‑01 (General cybersecurity awareness)
 
@@ -122,58 +130,55 @@ Corrected Mapping Rationale:
 PR.AT‑01 covers general awareness training.
 PR.AT‑02 is for specialized roles, not annual training for all employees.
 
-Current State:  
-Training is optional; participation inconsistent.
+## Current State:  
 
-Target State:  
-Mandatory annual cybersecurity awareness training for all employees with tracked completion.
+Optional training leaves employees unprepared for threats such as phishing.
 
-Evidence to Check:
+## Target State:  
 
-LMS completion reports
+Mandatory annual training with tracked completion.
 
-Training materials
+## Evidence to Check:
 
-Attendance logs
-
-Mandatory training policy
-
-Non‑compliance records (if applicable)
+LMS completion reports, Training materials, Attendance logs, Mandatory training policy and Non‑compliance records (if applicable).
 
 Status: Open
+
 Gap Severity: Medium
+
+
 
 
 ## Offboarding
 
+
 NIST CSF 2.0 Reference: PR.AA‑05 (Permissions & deprovisioning)
 
-Corrected Mapping Rationale:  
+## Corrected Mapping Rationale:  
+
+
 Offboarding is a distinct identity and access risk. It must remain in the register and remediation plan.
 
-Current State:  
-Offboarding steps are inconsistent or undocumented.
+## Current State: 
 
-Target State:  
-Documented and enforced offboarding workflow including:
 
-Immediate account disablement
+Inconsistent offboarding leads to lingering access and potential unauthorized use, the steps steps are not consistently documented or enforced.
 
-License removal
+## Target State:  
 
-Access revocation
 
-Device return
+Formal offboarding workflow with immediate deprovisioning, including:
 
-HR confirmation
+Immediate account disablement, License removal, Access revocation, Device return and HR confirmation
 
-Evidence to Check:
 
-Offboarding checklist
+## Evidence to Check:
 
-Tickets/workflows
+
+Offboarding checklist and Tickets/workflows
 
 Audit logs showing timely deprovisioning
 
 Status: Open
+
 Gap Severity: Medium
