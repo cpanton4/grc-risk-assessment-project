@@ -27,9 +27,14 @@ Screenshots/exports of MFA enforcement settings.
 Exception documentation.
 
 Status: Open
+
 Gap Severity: High
-Scenario Clarification:  
+
+## Scenario Clarification:  
 The register previously stated MFA was “enforced,” but the gap assessment showed missing MFA. Label the register’s statement as Target State and the gap assessment as Current State to resolve the contradiction.
+
+
+
 
 ## Access Reviews (Quarterly Reviews Missing)
 
