@@ -1,28 +1,29 @@
 ## Identity Management (MFA Gaps)
 
 NIST CSF 2.0 Reference: PR.AA‑03 (Authentication)
-Supporting Reference: PR.AA‑02 (Identity proofing & credential binding — MFA is the selected control for strengthening authentication)
+Supporting Reference: PR.AA‑02 (Identity proofing & credential binding — MFA is the selected control for strengthening authentication).
 
 Corrected Mapping Rationale:  
 PR.AA‑03 covers authentication requirements. MFA is your chosen control to ensure strong authentication and prevent unauthorized access. PR.AA‑02 supports this by ensuring identities and credentials are properly bound before MFA is enforced.
 
 Current State (Baseline):  
-Some user accounts across Microsoft 365, Entra ID, and VPN do not have MFA enabled.
+Missing MFA reduces authentication strength and increases unauthorized access risk.
+MFA not enforced for all users, systems, remote access, or admin accounts.
 
 Target State:  
 MFA enforced for all users, all systems, all remote access, and all administrative accounts.
 
 Evidence to Check:
 
-Entra ID Conditional Access policies
+Entra ID Conditional Access policies.
 
-MFA enrollment reports
+MFA enrollment reports.
 
-VPN authentication logs
+VPN authentication logs.
 
-Screenshots/exports of MFA enforcement settings
+Screenshots/exports of MFA enforcement settings.
 
-Exception documentation
+Exception documentation.
 
 Status: Open
 Gap Severity: High
