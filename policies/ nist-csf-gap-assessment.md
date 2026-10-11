@@ -16,15 +16,7 @@ MFA enforced for all users, all systems, all remote access, and all administrati
 
 ## Evidence to Check:
 
-Entra ID Conditional Access policies.
-
-MFA enrollment reports.
-
-VPN authentication logs.
-
-Screenshots/exports of MFA enforcement settings.
-
-Exception documentation.
+Entra ID Conditional Access policies, MFA enrollment report, VPN authentication logs, Screenshots/exports of MFA enforcement settings and Exception documentation.
 
 Status: Open
 
@@ -41,37 +33,22 @@ The register previously stated MFA was “enforced,” but the gap assessment sh
 NIST CSF 2.0 Reference: PR.AA‑05 (Permissions, least privilege, access reviews)
 Supporting Reference: GV.OV‑03 (Governance oversight)
 
-Corrected Mapping Rationale:  
+## Corrected Mapping Rationale:  
 PR.AA‑05 covers permission management and periodic access reviews. Quarterly reviews ensure least privilege and governance oversight. PR.AA‑08 does not exist in CSF 2.0.
 
-Current State:  
-No scheduled or documented access reviews.
+## Current State:  
+Lack of quarterly access reviews increases risk of outdated or excessive permissions.
 
-Target State:  
-Formal quarterly access reviews covering:
+## Target State:  
+Quarterly access reviews with sign‑off and audit trails. Including:
 
-Microsoft 365
+Microsoft 365, Entra ID roles, VPN access, Administrative privileges, Access review logs/tickets. Sign‑off records, RBAC documentation, Audit trails of permission changes and Review calendar/workflow documentation.
 
-Entra ID roles
+Status: Open.
 
-VPN access
+Gap Severity: Medium.
 
-Administrative privileges
 
-Evidence to Check:
-
-Access review logs/tickets
-
-Sign‑off records
-
-RBAC documentation
-
-Audit trails of permission changes
-
-Review calendar/workflow documentation
-
-Status: Open
-Gap Severity: Medium
 
 ## Incident Response (No Documented Plan)
 
