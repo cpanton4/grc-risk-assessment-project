@@ -90,36 +90,27 @@ Note: Mark any drafted policies as Draft until implemented.
 
 NIST CSF 2.0 Reference: PR.DS‑11 (Backup creation, protection, maintenance, and testing)
 
-Corrected Mapping Rationale:  
+## Corrected Mapping Rationale:  
+
+
 PR.DS‑11 replaces PR.DS‑06 in CSF 2.0. It covers backup creation, protection, and testing.
 
-Current State:  
-Backups exist but recovery testing is not performed.
+## Current State:  
 
-Target State:  
-Quarterly recovery testing for:
+No recovery testing performed.
 
-Microsoft 365
+## Target State:  
 
-Cloud storage
+Quarterly recovery testing across all critical systems. These include:
 
-Critical financial systems
+Microsoft 365, Cloud storage, Critical financial system and Laptop recovery images (if applicable).
 
-Laptop recovery images (if applicable)
+## Evidence to Check:
 
-Evidence to Check:
-
-Backup configuration reports
-
-Recovery test logs
-
-Screenshots of successful restores
-
-Retention policies
-
-Backup failure alerts
+Backup configuration reports, Recovery test logs, Screenshots of successful restores, Retention policies and Backup failure alerts
 
 Status: Open
+
 Gap Severity: Medium
 
 
