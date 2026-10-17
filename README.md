@@ -40,28 +40,31 @@ employees.
 ## Findings
 
 
-1. Missing MFA Enforcement — High Severity (PR.AA‑03 / PR.AA‑02)
-MFA was not consistently enforced across users, systems, remote access, or administrative accounts. This significantly increases unauthorized access risk.
+• Missing MFA Enforcement — High Severity (PR.AA‑03 / PR.AA‑02)
+  MFA was not consistently enforced across users, systems, remote access, or administrative accounts. This significantly increases unauthorized access risk.
 
-2. Missing Quarterly Access Reviews — Medium Severity (PR.AA‑05 / GV.OV‑03)
-Lack of periodic reviews leads to outdated or excessive permissions and weak governance oversight.
+• Missing Quarterly Access Reviews — Medium Severity (PR.AA‑05 / GV.OV‑03)
+  Lack of periodic reviews leads to outdated or excessive permissions and weak governance oversight.
 
-3. No Documented Incident Response Plan — High Severity (ID.IM‑04 / ID.IM‑02 / RS.CO‑02)
-Absence of a formal IR plan reduces the organization’s ability to respond effectively to security incidents.
+• No Documented Incident Response Plan — High Severity (ID.IM‑04 / ID.IM‑02 / RS.CO‑02)
+  Absence of a formal IR plan reduces the organization’s ability to respond effectively to security incidents.
 
-4. Backups Not Recovery‑Tested — Medium Severity (PR.DS‑11)
-Backup systems were not tested, creating uncertainty around recovery capability.
+• Backups Not Recovery‑Tested — Medium Severity (PR.DS‑11)
+  Backup systems were not tested, creating uncertainty around recovery capability.
 
-5. Optional Security Training — Medium Severity (PR.AT‑01)
-Optional training leaves employees vulnerable to phishing and social engineering.
+• Optional Security Training — Medium Severity (PR.AT‑01)
+  Optional training leaves employees vulnerable to phishing and social engineering.
+  
+• Inconsistent Offboarding — Medium Severity (PR.AA‑05)
+  Delayed or incomplete deprovisioning creates lingering access risk.
+  
 
-6. Inconsistent Offboarding — Medium Severity (PR.AA‑05)
-Delayed or incomplete deprovisioning creates lingering access risk.
+ ## Control Test Summary (Offboarding)
 
-Control Test Summary (Offboarding)
-A simulated offboarding test was performed using five fictional employees and three systems (Entra ID, VPN, Finance App).
-Result: 3 of 5 employees had at least one system not disabled within the required one‑hour window.
-A retest using corrected data showed full compliance.
+• A simulated offboarding test was performed using five fictional employees and three systems (Entra ID, VPN, Finance App).
+    Result: 3 of 5 employees had at least one system not disabled within the required one‑hour window.
+  
+• A retest using corrected data showed full compliance.
 
 
 
