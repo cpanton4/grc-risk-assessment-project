@@ -1,175 +1,205 @@
-## Identity Management (MFA Gaps)
+# Gap Assessment — NIST CSF 2.0
+This document summarizes the gaps identified during the assessment, including mappings, current and target states, severity ratings, required evidence, and associated security controls.
+
+---
+
+## 1. Identity Management — Missing MFA Enforcement
+### NIST CSF 2.0 Mapping
+- PR.AA‑03 — Authentication
+- PR.AA‑02 — Identity proofing & credential binding
+
+### Current State
+MFA is not enforced for all users, systems, remote access, or administrative accounts. Missing MFA significantly increases unauthorized access risk.
+
+### Target State
+MFA enforced for:
+- All users  
+- All systems  
+- All remote access  
+- All administrative accounts  
+
+### Gap Severity
+**High**
+
+### Evidence Required
+- Entra ID Conditional Access policies  
+- MFA enrollment report  
+- VPN authentication logs  
+- Screenshots/exports of MFA enforcement settings  
+- Exception documentation  
+
+### Security Control
+**PR.AA‑03‑C1 — MFA Enforcement for All Identities**  
+Strong authentication enforced through mandatory MFA across all identity platforms, with documented exceptions and quarterly reviews.
+
+### Status
+Open
+
+---
+
+## 2. Access Reviews — Quarterly Reviews Missing
+### NIST CSF 2.0 Mapping
+- PR.AA‑05 — Permissions & access reviews  
+- GV.OV‑03 — Governance oversight  
+
+### Current State
+Quarterly access reviews are not performed, resulting in outdated or excessive permissions.
+
+### Target State
+Quarterly access reviews with:
+- Sign‑off  
+- Audit trails  
+- RBAC documentation  
+- Review calendar/workflow  
+
+### Gap Severity
+**Medium**
+
+### Evidence Required
+- Access review logs/tickets  
+- RBAC documentation  
+- Sign‑off records  
+- Audit trails of permission changes  
+- Review workflow documentation  
+
+### Security Control
+**PR.AA‑05‑C2 — Quarterly Access Review & Certification**  
+Formal quarterly access reviews ensuring least privilege and governance oversight.
+
+### Status
+Open
+
+---
+
+## 3. Incident Response — No Documented IR Plan
+### NIST CSF 2.0 Mapping
+- ID.IM‑04 — Maintaining response plans  
+- ID.IM‑02 — Improvements from tests/exercises  
+- RS.CO‑02 — Stakeholder notification  
+
+### Current State
+No documented or tested incident response plan exists.
+
+### Target State
+A documented, approved, annually tested IR plan including:
+- Roles & responsibilities  
+- Communication procedures  
+- Escalation paths  
+- Annual testing & updates  
+
+### Gap Severity
+**High**
+
+### Evidence Required
+- IR plan document  
+- Test/exercise reports  
+- Training records  
+- Incident logs  
+- Approval records  
+
+### Security Control
+**ID.IM‑04‑C3 — Documented & Tested Incident Response Plan**  
+Formal IR plan maintained, tested annually, and updated based on lessons learned.
 
-NIST CSF 2.0 Reference: PR.AA‑03 (Authentication)
-Supporting Reference: PR.AA‑02 (Identity proofing & credential binding — MFA is the selected control for strengthening authentication).
+### Status
+Open
 
-## Corrected Mapping Rationale:  
-PR.AA‑03 covers authentication requirements. MFA is your chosen control to ensure strong authentication and prevent unauthorized access. PR.AA‑02 supports this by ensuring identities and credentials are properly bound before MFA is enforced.
+---
 
-## Current State (Baseline):  
-Missing MFA reduces authentication strength and increases unauthorized access risk.
-MFA not enforced for all users, systems, remote access, or admin accounts.
+## 4. Backups — No Recovery Testing
+### NIST CSF 2.0 Mapping
+- PR.DS‑11 — Backup creation, protection, maintenance, and testing  
 
-## Target State: 
+### Current State
+No recovery testing has been performed for critical systems.
 
-MFA enforced for all users, all systems, all remote access, and all administrative accounts.
+### Target State
+Quarterly recovery testing for:
+- Microsoft 365  
+- Cloud storage  
+- Critical financial systems  
+- Laptop recovery images  
 
-## Evidence to Check:
+### Gap Severity
+**Medium**
 
-Entra ID Conditional Access policies, MFA enrollment report, VPN authentication logs, Screenshots/exports of MFA enforcement settings and Exception documentation.
+### Evidence Required
+- Backup configuration reports  
+- Recovery test logs  
+- Screenshots of successful restores  
+- Retention policies  
+- Backup failure alerts  
 
-Status: Open
+### Security Control
+**PR.DS‑11‑C4 — Quarterly Backup Recovery Testing**  
+Quarterly restore tests validating backup integrity and recoverability.
 
-Gap Severity: High
+### Status
+Open
 
-Scenario Clarification:  
-The register previously stated MFA was “enforced,” but the gap assessment showed missing MFA. Label the register’s statement as Target State and the gap assessment as Current State to resolve the contradiction.
+---
 
+## 5. Security Training — Optional Training
+### NIST CSF 2.0 Mapping
+- PR.AT‑01 — General cybersecurity awareness  
 
+### Current State
+Training is optional, leaving employees unprepared for phishing and social engineering threats.
 
-
-
-## Access Reviews (Quarterly Reviews Missing)
-
-NIST CSF 2.0 Reference: PR.AA‑05 (Permissions, least privilege, access reviews)
-Supporting Reference: GV.OV‑03 (Governance oversight)
-
-## Corrected Mapping Rationale:  
-PR.AA‑05 covers permission management and periodic access reviews. Quarterly reviews ensure least privilege and governance oversight. PR.AA‑08 does not exist in CSF 2.0.
-
-## Current State:  
-Lack of quarterly access reviews increases risk of outdated or excessive permissions.
-
-## Target State:  
-Quarterly access reviews with sign‑off and audit trails. Including:
-
-Microsoft 365, Entra ID roles, VPN access, Administrative privileges, Access review logs/tickets. Sign‑off records, RBAC documentation, Audit trails of permission changes and Review calendar/workflow documentation.
-
-Status: Open.
-
-Gap Severity: Medium.
-
-
-
-
-## Incident Response (No Documented Plan)
-
-NIST CSF 2.0 Reference:
-
-ID.IM‑04 (Maintaining response plans)
-
-ID.IM‑02 (Improvements from tests/exercises)
-
-RS.CO‑02 (Notifying internal/external stakeholders)
-
-
-
-## Corrected Mapping Rationale:  
-
-RS.MA‑01 and RS.MA‑02 relate to response execution and triage, not plan creation/testing.
-ID.IM‑04 covers maintaining incident response plans.
-ID.IM‑02 covers improvements from exercises.
-RS.CO‑02 replaces RS.CO‑01 (which does not exist in CSF 2.0).
-
-## Current State:  
-No documented or tested incident response plan, reducing ability to respond to incidents.
-
-## Target State:  
-Documented, approved, annually tested IR plan, including:
-
-Roles/responsibilities, Communication procedures, Escalation paths and Annual testing and updates.
-
-## Evidence to Check:
-
-Incident Response Plan document, Test/exercise reports, Training records, Incident logs showing plan usage and Approval records.
-
-Status: Open
-
-Gap Severity: High
-
-Note: Mark any drafted policies as Draft until implemented.
-
-
-
-
-
-## Backups (Not Tested)
-
-NIST CSF 2.0 Reference: PR.DS‑11 (Backup creation, protection, maintenance, and testing)
-
-## Corrected Mapping Rationale:  
-
-
-PR.DS‑11 replaces PR.DS‑06 in CSF 2.0. It covers backup creation, protection, and testing.
-
-## Current State:  
-
-No recovery testing performed.
-
-## Target State:  
-
-Quarterly recovery testing across all critical systems. These include:
-
-Microsoft 365, Cloud storage, Critical financial system and Laptop recovery images (if applicable).
-
-## Evidence to Check:
-
-Backup configuration reports, Recovery test logs, Screenshots of successful restores, Retention policies and Backup failure alerts
-
-Status: Open
-
-Gap Severity: Medium
-
-
-
-
-
-## Optional Security Training 
-
-NIST CSF 2.0 Reference: PR.AT‑01 (General cybersecurity awareness)
-
-Corrected Mapping Rationale:  
-PR.AT‑01 covers general awareness training.
-PR.AT‑02 is for specialized roles, not annual training for all employees.
-
-## Current State:  
-
-Optional training leaves employees unprepared for threats such as phishing.
-
-## Target State:  
-
+### Target State
 Mandatory annual training with tracked completion.
 
-## Evidence to Check:
+### Gap Severity
+**Medium**
 
-LMS completion reports, Training materials, Attendance logs, Mandatory training policy and Non‑compliance records (if applicable).
+### Evidence Required
+- LMS completion reports  
+- Training materials  
+- Attendance logs  
+- Mandatory training policy  
+- Non‑compliance records  
 
-Status: Open
+### Security Control
+**PR.AT‑01‑C5 — Annual Mandatory Cybersecurity Training**  
+Mandatory annual training with LMS tracking and HR escalation for non‑compliance.
 
-Gap Severity: Medium
+### Status
+Open
 
+---
 
+## 6. Offboarding — Inconsistent Deprovisioning
+### NIST CSF 2.0 Mapping
+- PR.AA‑05 — Permissions & deprovisioning  
 
+### Current State
+Offboarding steps are inconsistent, leading to lingering access.
 
-## Offboarding
+### Target State
+Formal offboarding workflow including:
+- Immediate account disablement  
+- License removal  
+- Access revocation  
+- Device return  
+- HR confirmation  
 
+### Gap Severity
+**Medium**
 
-NIST CSF 2.0 Reference: PR.AA‑05 (Permissions & deprovisioning)
+### Evidence Required
+- Offboarding checklist  
+- Tickets/workflows  
+- Audit logs showing disablement timestamps  
+- HR termination records  
 
-## Corrected Mapping Rationale:  
+### Security Control
+**PR.AA‑05‑C6 — Immediate Account Disablement at Termination**  
+Accounts disabled within one hour of termination, with audit logs and workflow enforcement.
 
+### Status
+Open
 
-Offboarding is a distinct identity and access risk. It must remain in the register and remediation plan.
+---
 
-## Current State: 
-
-
-Inconsistent offboarding leads to lingering access and potential unauthorized use, the steps steps are not consistently documented or enforced.
-
-## Target State:  
-
-
-Formal offboarding workflow with immediate deprovisioning, including:
-
-Immediate account disablement, License removal, Access revocation, Device return and HR confirmation
-
+# Summary
+All six gaps remain open and require remediation. Controls have been defined and evidence requirements documented. The next step is to complete remediation planning and link the offboarding control test 
