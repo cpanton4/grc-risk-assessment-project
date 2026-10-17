@@ -1,144 +1,287 @@
-Enable MFA
+## 2‑Week GRC Action Plan
 
-Risk ID: AFS‑IAM‑001
 
-Owner: IAM Team
 
-Priority: Critical
+Scope: Identity & Access Management, Governance, Incident Response, Data Protection, Training
 
-Priority Rationale: MFA protects access to financial data and Microsoft 365 accounts. Without MFA, a single stolen password could lead to account takeover, fraudulent financial activity, or data exposure.
 
-Target Date: 30 days
+Framework: NIST CSF 2.0
 
-Actual Target Date: Pending
 
-Status: In Progress
+Goal: Produce a complete, evidence‑backed GRC portfolio with standardized register entries, validated mappings, one control test, and a management summary.
 
-Success Criteria: 100% of user accounts use MFA.
 
-Evidence Needed:
+Week 1 — Foundation, Validation, and Register Completion
 
-Entra ID MFA enforcement policy screenshot
 
-Export of MFA enrollment report showing 100% completion
+Days 1–2 — Validate All NIST CSF 2.0 Mappings
 
-Notes / Follow‑Up:
 
-Weekly progress checks with IAM
+Objective: Ensure every control reference is correct, exists in CSF 2.0, and matches the rationale.
 
-Escalate non‑compliant accounts to HR after day 20
+Tasks:
 
+Re‑verify each mapping:
 
+MFA → PR.AA‑03 + PR.AA‑02
 
-Review Administrator Accounts
-Risk ID: AFS‑SEC‑002
+Access Reviews → PR.AA‑05 + GV.OV‑03
 
-Owner: Security Team
+Incident Response → ID.IM‑04, ID.IM‑02, RS.CO‑02
 
-Priority: High
+Backups → PR.DS‑11
 
-Priority Rationale: Excess admin accounts increase the attack surface. Privileged misuse or compromise could lead to unauthorized system changes or data theft.
+Training → PR.AT‑01
 
-Target Date: 30 days
+Offboarding → PR.AA‑05
 
-Actual Target Date: Pending
+Confirm no deprecated references (e.g., PR.AA‑08, RS.CO‑01).
 
-Status: Not Started
+Add source links to official NIST CSF 2.0 documentation.
 
-Success Criteria: Unneeded administrator access is removed.
+You are done when:  
 
-Evidence Needed:
+Every reference exists, is correct, and has a source link.
 
-Admin role review report
 
-Change logs showing removal of unnecessary admin roles
+Days 3–4 — Standardize Baseline Facts & Register Metadata
 
-Updated least‑privilege matrix
+Objective: Remove contradictions and ensure consistent formatting.
 
+Tasks
 
-Create an Incident Response Plan
-Risk ID: AFS‑MGMT‑003
+Normalize:
 
-Owner: Security Manager
+Current State vs Target State
 
-Priority: High
+Gap severity
 
-Priority Rationale: The company handles financial data and must be able to respond quickly to breaches. Lack of an IR plan increases downtime, financial loss, and regulatory exposure.
+Status (Open, Draft, Closed)
 
-Target Date: 60 days
+Dates (assessment date, due date)
 
-Actual Target Date: Pending
+Owner fields
 
-Status: In Progress
+Correct contradictions (e.g., MFA “enforced” vs “missing”).
 
-Success Criteria: Company completes a response exercise.
+Create a unified risk register template with:
 
-Evidence Needed:
+Asset, Risk statement, Rating rationale, Owner,Remaining risk estimate,Treatment plan and Due date.
 
-Final IR plan document
 
-Tabletop exercise report
+You are done when:  
 
-Attendance list for participants
+Each finding flows logically from assessment → gap → treatment.
 
+Days 5–7 — Complete Register Entries for All Six Risks
 
-Test Backups
-Risk ID: AFS‑IT‑004
+Objective: Produce full register entries with evidence requirements.
 
-Owner: IT Team
+Tasks:
 
-Priority: High
+Create full entries for:
 
-Priority Rationale: Backup failures could result in permanent loss of customer financial data. Testing ensures recoverability and supports business continuity.
+1. MFA Gaps (High Severity)
+Asset: Identity platform (Entra ID, VPN, Admin systems)
 
-Target Date: 45 days
+Risk: Unauthorized access due to missing MFA
 
-Actual Target Date: Pending
+Treatment: Enforce MFA for all users/systems.
 
-Status: Scheduled
+Evidence: CA policies, MFA enrollment, VPN logs.
 
-Success Criteria: Company successfully restores a test file.
 
-Evidence Needed:
 
-Backup job logs
+2. Quarterly Access Reviews (Medium Severity)
 
-Screenshot or report showing successful file restoration
+Asset: Permissions & RBAC systems.
 
-Updated backup testing procedure
+Risk: Excessive or outdated access.
 
+Treatment: Quarterly reviews with sign‑off.
 
-Conduct Phishing Training
-Risk ID: AFS‑HRSEC‑005
+Evidence: Review logs, RBAC docs, audit trails.
 
-Owner: HR & Security
 
-Priority: Medium
 
-Priority Rationale: Phishing is a common attack vector. Training reduces risk but is not as urgent as MFA or admin access because it does not directly protect systems.
+3. Incident Response Plan (High Severity)
+Asset: IR capability
 
-Target Date: 90 days
+Risk: Delayed or ineffective incident handling.
 
-Actual Target Date: Pending
+Treatment: Create, approve, test IR plan.
 
-Status: Not Started
+Evidence: IR plan, test reports, training records.
 
-Success Criteria: At least 95% of employees complete training.
 
-Evidence Needed:
 
-LMS completion report
+4. Backup Testing (Medium Severity)
+Asset: Backup systems
 
-Training materials
+Risk: Inability to recover data.
 
-Phishing simulation results
+Treatment: Quarterly restore testing.
 
-Follow‑Up Plan for Remaining 5%:
+Evidence: Restore logs, retention policies.
 
-HR sends individual reminders
 
-Security schedules mandatory 1:1 training for non‑compliant employees
 
-Employees who fail to complete training after 3 reminders are escalated to management
+5. Mandatory Security Training (Medium Severity)
+Asset: Workforce security posture
 
-Completion tracked weekly until 100% is achieved
+Risk: Increased phishing/social engineering exposure.
+
+Treatment: Mandatory annual training.
+
+Evidence: LMS reports, attendance logs.
+
+
+
+6. Offboarding (Medium Severity)
+Asset: Identity lifecycle.
+
+Risk: Lingering access after termination.
+
+Treatment: Formal offboarding workflow.
+
+Evidence: Checklists, tickets, audit logs.
+
+
+
+You are done when:  
+
+All six risks have complete register entries with treatment plans and evidence lists.
+
+
+
+Week 2 — Control Testing, Reporting, and Presentation.
+
+Days 8–10 — Perform the Required Control Test (Offboarding).
+
+
+Objective: Execute the offboarding test using simulated data.
+
+Step 1 — Define the Rule:
+
+Access must end within 1 hour of HR‑recorded termination time.
+
+Systems in scope:
+
+Entra ID, VPN, Finance Application
+
+
+Evidence of Terminated Employees:
+
+
+Alice Raymond	2026‑09‑14 10:00
+
+Brian Cho	2026‑09‑14 11:30
+
+Cynthia Morales	2026‑09‑14 15:45
+
+David Okoye	2026‑09‑15 09:00
+
+Emily Hart	2026‑09‑15 14:20
+
+Evidence/account-records.csv
+
+Employee,System,DisableTime,Status
+Alice Raymond,EntraID,2026-09-14 10:20,Disabled
+Alice Raymond,VPN,2026-09-14 12:00,Active
+Alice Raymond,FinanceApp,2026-09-14 10:10,Disabled
+
+Brian Cho,EntraID,2026-09-14 11:40,Disabled
+Brian Cho,VPN,2026-09-14 11:50,Disabled
+Brian Cho,FinanceApp,2026-09-14 13:00,Active
+
+Cynthia Morales,EntraID,2026-09-14 16:30,Disabled
+Cynthia Morales,VPN,2026-09-14 16:00,Disabled
+Cynthia Morales,FinanceApp,2026-09-14 16:10,Disabled
+
+David Okoye,EntraID,2026-09-15 09:20,Disabled
+David Okoye,VPN,2026-09-15 09:30,Disabled
+David Okoye,FinanceApp,2026-09-15 09:15,Disabled
+
+Emily Hart,EntraID,2026-09-15 15:00,Active
+Emily Hart,VPN,2026-09-15 14:40,Disabled
+Emily Hart,FinanceApp,2026-09-15 14:50,Disabled
+
+
+Record Comparison:
+
+
+Rule: Disable within 1 hour.
+
+Create assessments/offboarding-test.md:
+
+Example findings:
+
+Employee	System	Result	Reason
+Alice	    VPN	    Fail	  Disabled 2 hours late
+Brian     VPN     Fail    Still Active
+Cynthia	  All	    Pass	  All disabled within 45 minutes
+David	    All	    Pass	  All disabled within 30 minutes
+Emily	   EntraID	Fail	  Still Active
+
+Summary:
+
+3 failures (Alice VPN, Brian VPN, Emily EntraID).
+
+Systems affected: VPN, Entra ID.
+
+Business risk: Former employees retaining access to critical systems.
+
+Owner: Identity & Access Manager.
+
+Recommended fix: Enforce automated deprovisioning workflow.
+
+
+Retest With Corrected Data:
+
+
+Create remediation/offboarding-retest.md with corrected SIMULATED dataset.
+
+
+Example:
+
+All accounts disabled within 20–40 minutes → All Pass.
+
+Record remaining risk:
+
+Risk: Automation dependency
+
+Accepted by: IAM Manager
+
+
+
+Days 11–12 — Write Management Summary
+
+Objective: Produce a polished, executive‑ready deliverable outcome.
+
+Tasks
+Write a one‑page summary:
+
+Scope, Method, Top findings, Severity distribution and Evidence locations.
+
+Retest:
+
+You are done when:  
+
+A manager can understand the entire project in one page.
+
+
+
+Days 13–14 — Practice Explaining the Project & Update Resume
+Objective: Prepare for interviews and stakeholder presentations.
+
+Tasks
+Practice a 5‑minute walkthrough:
+
+One risk, One control, One test and One remediation
+
+Add a resume bullet:
+
+“Built a complete NIST CSF 2.0 GRC portfolio including risk register, evidence repository, control test, and executive summary.”
+
+You are done when:  
+You can confidently explain the project and answer follow‑up questions.
