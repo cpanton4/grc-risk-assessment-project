@@ -29,12 +29,18 @@ employees.
 • CIS Controls
 
 ## Skills Demonstrated
-• Risk identification and scoring
-• Policy development
-• Security control assessment
-• Identity and access management
-• Compliance documentation
-• Remediation planning
+
+• Risk identification and scoring.
+
+• Policy development.
+
+• Security control assessment.
+
+• Identity and access management.
+
+• Compliance documentation.
+
+• Remediation planning.
 
 
 ## Findings
